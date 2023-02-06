@@ -2,7 +2,7 @@ class Backend::UsersController < Backend::BaseController
   before_action :set_user, only: %i[ show edit update destroy ]
 
   def index
-    @search = backend::User.all.ransack(params[:q])
+    @search = Backend::User.all.ransack(params[:q])
 
     respond_to do |format|
       format.html { @pagy, @users = pagy(@search.result) }

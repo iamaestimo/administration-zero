@@ -21,7 +21,7 @@ The purpose of administration zero is to generate a pre-built administration pan
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "administration-zero"
+gem "administration-zero", git: 'https://github.com/iamaestimo/administration-zero'
 ```
 
 Then run `bundle install`
@@ -47,6 +47,10 @@ Now you're ready to generate your backend scaffolds.
 ```
 rails generate backend:scaffold posts title:string body:text published:boolean
 ```
+
+## Why use 'Backend'?
+
+Well, for one, to have a more general namespace 'backend' so it works better with role-based authorization with roles like "admin", "user", "manager" etc.
 
 ## Development
 
