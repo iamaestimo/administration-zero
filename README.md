@@ -32,21 +32,20 @@ You'll need to create a model to be administrated, if you don't have one. for th
 rails generate model posts title:string body:text published:boolean
 ```
 
-## Usage
+## Usage (Modified to use "backend" instead of "admin")
 
 ```
-rails generate admin:install
+rails generate backend:install
 ```
 
 Then run `bundle install` again
 
-Then run `rails db:migrate db:seed`, you can access the admin panel in `/admin`, using `email: "admin@example.com", password: "Password9957"`
+Then run `rails db:migrate db:seed`, you can access the admin panel in `/backend`, using `email: "admin@example.com", password: "Password9957"`
 
-
-Now you're ready to generate your admin scaffolds.
+Now you're ready to generate your backend scaffolds.
 
 ```
-rails generate admin:scaffold posts title:string body:text published:boolean
+rails generate backend:scaffold posts title:string body:text published:boolean
 ```
 
 ## Development
@@ -55,7 +54,7 @@ To release a new version, update the version number in `version.rb`, and then ru
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/lazaronixon/administration-zero. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/lazaronixon/administration-zero/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at <https://github.com/lazaronixon/administration-zero>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/lazaronixon/administration-zero/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
